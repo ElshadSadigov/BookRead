@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #172b3d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+html::-webkit-scrollbar {
+    background: none;
+    width: 7px;
+    height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: red;
+
+}

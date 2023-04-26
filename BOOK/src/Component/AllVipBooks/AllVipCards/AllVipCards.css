@@ -1,0 +1,64 @@
+.allVipCards{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.allVipCards-Img{
+    width: 100%;
+    height: 100%;
+}
+.allVipCards-Img img{
+    width: 100%;
+    height: 100%;
+}
+
+.allVipCards-Info{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: 500ms all;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 0;
+}
+.allVipCards:hover > .allVipCards-Info{
+    top: 0;
+}
+.allVipCards-Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.allVipCards-Title span:nth-child(1){
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0;
+}
+
+.allVipCards-Title span:nth-child(2){
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.allVipCards-PDF a{
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #172b3d;
+}

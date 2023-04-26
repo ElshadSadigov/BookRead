@@ -1,0 +1,66 @@
+.booksCards{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #0e1f2d;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 15px 0px;
+}
+
+.booksCards-Img{
+    width: 100%;
+    height: 80%;
+    
+}
+
+.booksCards-Img img{
+    width: 100%;
+    height: 100%;
+}
+.booksCards-Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem 0 0.5rem;
+    color: #fff;
+}
+.Info-Text{
+    display: flex;
+    flex-direction: column;
+}
+.Info-Text span:nth-child(1){
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.Info-Text span:nth-child(2){
+    font-size: 14px;
+    margin: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Info-Btn{
+    margin: 5px 0 0;
+}
+
+.Info-Btn a{
+    padding: 8px 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 1000ms all;
+}
+
+.Info-Btn i{
+    font-size: 16px;
+    color: #0e1f2d;
+    transition: 1000ms all;
+}
+
+.Info-Btn a:hover{
+    background-color: #0e1f2d;
+}
+
+.Info-Btn a:hover i{
+    color: #fff;
+}

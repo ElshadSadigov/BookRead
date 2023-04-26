@@ -1,0 +1,64 @@
+.footer {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #081725;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    align-items: center;
+}
+.footerLogo span{
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+}
+
+.footerLogo span:nth-child(1){
+    color: red;
+}
+.footerLogo span:nth-child(2){
+    color: yellow;
+}
+
+.sosialMedia a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
+.sosialMedia i{
+    transition: 500ms all;
+}
+
+.sosialMedia a:nth-last-child(1){
+    margin-right: 0;
+}
+
+.sosialMedia a:hover i{
+    transform: rotate(360deg);
+    color: red;
+}
+@media screen and (max-width: 992px) {
+    .footer{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer{
+        width: 100%;
+    }
+    .sosialMedia a{
+        font-size: 18px;
+    }
+}

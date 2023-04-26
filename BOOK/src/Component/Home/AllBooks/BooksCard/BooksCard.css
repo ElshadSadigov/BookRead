@@ -1,0 +1,69 @@
+.booksCard{
+    max-height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.booksImg{
+    width: 100%;
+    height: 100%;
+}
+
+.booksImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bookInfo{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 600ms all;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.bookInfo-Title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.bookInfo-Title span:nth-child(1){
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px 0;
+}
+
+.bookInfo-Title span:nth-child(2){
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5px 0;
+}
+
+.bookDownload a{
+    background-color: #fff;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0e1f2d;
+    font-weight: 800;
+}
+
+.booksCard:hover .bookInfo{
+    top: 0;
+}

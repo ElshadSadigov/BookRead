@@ -1,0 +1,36 @@
+.advertising {
+    margin: 8rem auto;
+    width: 60%;
+    height: 450px;
+}
+
+.advertising iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+    .advertising {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .advertising {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advertising {
+        width: 80%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .advertising {
+        width: 90%;
+        height: 270px;
+    }
+}

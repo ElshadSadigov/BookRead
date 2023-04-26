@@ -1,0 +1,88 @@
+.booksAll{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+}
+
+.booksAll-Back{
+    width: 80%;
+    padding: 0 3rem;
+}
+.booksAll-Back a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.booksAll-Back i{
+    font-size: 16px;
+    margin: 0 5px;
+}
+.booksAll-Title{
+    width: 80%;
+    margin:   1rem 0;
+    padding: 0 3rem;
+}
+
+.booksAll-Title span{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.booksAll-Search{
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+.booksAll-Search input{
+    padding: 10px 15px;
+    width: 25rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #0e1d2f;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.booksAll-Search input:focus{
+    outline: none;
+    color: #fff;
+}
+.booksAll-Search input::placeholder{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.booksAll-Body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(180px, 200px));
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 2rem 0 0;
+}
+
+@media screen and (max-width: 992px) {
+    .booksAll-Body{
+        grid-template-columns: repeat(3, minmax(180px, 200px));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .booksAll-Body{
+        grid-template-columns: repeat(2, minmax(180px, 200px));
+        gap: 1rem;
+    }
+    .booksAll{
+        width: 90%;
+    }
+    .booksAll-Back{
+        width: 100%;
+        padding: 0;
+    }
+    .booksAll-Title{
+        width: 100%;
+        padding: 0;
+    }
+}

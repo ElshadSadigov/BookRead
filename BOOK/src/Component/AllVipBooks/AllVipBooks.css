@@ -1,0 +1,103 @@
+.allVipBooks {
+    width: 70%;
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allVipBooks-Back {
+    width: 80%;
+}
+
+.allVipBooks-Back a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.allVipBooks-Back i {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+
+.allVip-Title {
+    width: 80%;
+    margin: 2rem auto 1rem;
+}
+
+.allVip-Title span {
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.allVip-Search {
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.allVip-Search input {
+    padding: 10px 15px;
+    width: 25rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #0e1d2f;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.allVip-Search input:focus {
+    outline: none;
+    color: #fff;
+}
+
+.allVip-Search input::placeholder {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.allVip-Body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(120px, 180px));
+    justify-content: center;
+    gap: 2rem 1rem;
+    margin: 1.5rem 0 0;
+}
+
+@media screen and (max-width: 992px) {
+    .allVipBooks {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .allVip-Body {
+        grid-template-columns: repeat(3, minmax(120px, 180px));
+    }
+
+    .allVip-Search input {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .allVip-Body {
+        grid-template-columns: repeat(2, minmax(120px, 180px));
+    }
+
+    .allVip-Title {
+        width: 100%;
+    }
+
+    .allVipBooks-Back {
+        width: 100%;
+    }
+}

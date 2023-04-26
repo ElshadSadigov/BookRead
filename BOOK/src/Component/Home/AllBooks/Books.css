@@ -1,0 +1,61 @@
+.books{
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    background-color:#0e1f2d;
+    padding: 0 2rem;
+    border-radius: 25px;
+}
+
+.books-Title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem;
+}
+.books-Title span{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.books-Title a{
+    text-decoration: none;
+    background-color: #fff;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 8px;
+    color: #0e1f2d;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.books-Body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 180px));
+    justify-content: center;
+    gap: 3rem 2rem;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 992px) {
+    .books-Body{
+        gap: 1.5rem 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .books{
+        width: 85%;
+    }
+    .books-Body{
+        grid-template-columns: repeat(3, minmax(60px, 180px));
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .books-Body{
+        grid-template-columns: repeat(2, minmax(60px, 180px));
+    }
+}

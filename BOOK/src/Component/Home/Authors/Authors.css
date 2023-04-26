@@ -1,0 +1,30 @@
+.authors{
+    background-color: #0e1f2d;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding:  1.5rem;
+    border-radius: 25px;
+}
+.authors-Title span{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.authors-Body{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 1rem 0;
+}
+@media screen and (max-width: 992px) {
+    .authors{
+        width: 85%;
+    }
+    .authors-Body{
+        grid-template-columns: 100%;
+    }
+}
+

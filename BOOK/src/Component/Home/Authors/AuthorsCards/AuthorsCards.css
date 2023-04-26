@@ -1,0 +1,50 @@
+.authorsCards{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    background-color: #172b3d;
+    margin: 1rem;
+    border-radius: 10px;
+}
+.authorsCards-Img{
+    min-width: 120px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.authorsCards-Img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.authorsCards-Info{
+    padding: 1rem;
+}
+.Info-Title{
+    margin: 5px 0;
+}
+.Info-Title span{
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Info-Text{
+    margin: 10px 0 0;
+}
+
+.Info-Text p{
+    font-size: 16px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width: 576px) {
+    .authorsCards{
+        flex-direction: column;
+    }
+    .authorsCards-Info{
+        text-align: center;
+    }
+}

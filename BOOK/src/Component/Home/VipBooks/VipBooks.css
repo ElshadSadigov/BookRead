@@ -1,0 +1,59 @@
+.vipBooks{
+    width: 85%;
+    margin: 5rem auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e1f2d;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.vipBooks-Title{
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.vipBooks-Title span{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vipBooks-Title a{
+    text-decoration: none;
+    background-color: #fff;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 8px;
+    color: #0e1f2d;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.vipBooks-body{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(60px, 180px));
+    /* justify-items: center; */
+    justify-content: center;
+    gap: 20px;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    .vipBooks-body{
+        grid-template-columns: repeat(3, minmax(120px, 180px));
+    }
+}
+@media screen and (max-width: 768px) {
+    .vipBooks{
+        width: 90%;
+    }
+    .vipBooks-body{
+        grid-template-columns: repeat(2, minmax(120px, 180px));
+        padding: 0 0.2rem;
+    }
+}
+
